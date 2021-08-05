@@ -1,0 +1,89 @@
+/* STYLES DE BASE */
+html {
+    font-size: 10%;
+}
+:root {
+    font-size: 2vh;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* DEFINITION DU CONTENU PRINCIPAL DE LA PAGE ET MISE EN PLACE DU FOND */
+.contenu{
+    background-image: url("../Images/bg2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
+/* COLONNE DES ELEMENTS A ALIGNER */
+.colonne {
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 8vh;
+    padding-top: 8vh;
+}
+/* STYLES DE TEXTE */
+h1 {
+    color: #000d1a;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    text-align: left;
+    padding: 2rem;
+    padding-left: 4rem;
+    font-weight: bold;
+}
+p {
+    color: #000d1a;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: bolder !important;
+}
+/* MISE EN PLACE DES FLECHES DE SCROLL */
+#flecheBas {
+    width: 15vh;
+    height: 15vh;
+    align-self: center;
+    color: #000d1a;
+}
+#flecheBas:hover {
+    color: #d1d100;
+    transition: 700ms;
+    transform: translate(0, 8vh) rotate(180deg);
+}
+#flecheBas2 {
+    width: 15vh;
+    height: 15vh;
+    align-self: center;
+    color: #d1d100;
+    transform: rotate(180deg);
+}
+#flecheBas2:hover {
+    color: #000d1a;
+    transition: 700ms;
+    transform: translate(0, -8vh) rotate(0deg);
+}
+
+/* GESTION DES PADDINGS DES ELEMENTS DE LA PAGE */
+#Pres {
+    padding-top: 10vh;
+}
+#Comp {
+    padding-top: 0vh;
+}
+#Passe {
+    padding-top: 6vh;
+}
+
+/* ADAPTATION AUX PETITS ECRANS */
+@media only screen and (max-width: 700px) {
+    #flecheBas {
+        display: none;
+    }
+    #flecheBas2 {
+        display: none;
+    }
+}

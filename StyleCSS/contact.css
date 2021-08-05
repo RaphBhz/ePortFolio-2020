@@ -1,0 +1,119 @@
+/* STYLES DE SECTIONS */
+main {
+    background-image: url("../Images/bg2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4vh;
+}
+/* Colonne contenant le formulaire */
+.colonneForm {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+/* STYLES DU FORMULAIRE */
+/* Formulaire */
+form {
+    background-image: url("../Images/bg2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Divs du formulaire */
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: stretch;
+    padding: 2vh;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    min-width: 50vh;
+}
+/* Titre des divs précédentes */
+.formDiv label{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5rem;
+    padding-bottom: 1vh;
+    font-weight: bolder;
+}
+.formDiv:hover {
+    color: #d1d100;
+    background-color: #000d1a;
+    transition: 500ms;
+}
+.formDiv:hover .formElem{
+    border-color: #d1d100;
+    transition: 800ms ease;
+}
+/* Elements du formulaire */
+.formElem{
+    border: none;
+    border-bottom: solid 0.5vh #000d1a;
+    border-left: solid 0.25vh #7c7c7c;
+    border-right: solid 0.25vh #7c7c7c;
+}
+/* Bouton de validation du formulaire */
+.formBouton {
+    font-family: 'Abril Fatface', cursive;;
+    width:30%;
+    border-radius: 8px;
+    color: #d1d100;
+    background-color: #000d1a;
+    align-self: center;
+    margin-top: 6vh;
+}
+.formDiv:hover .formBouton{
+    background-color: #d1d100;
+    color: #000d1a;
+
+}
+.formBouton:hover {
+    background-color: #FFFFFF!important;
+    transition: 300ms ease;
+}
+
+/* STYLE DE TEXTE */
+h1{
+    padding-bottom: 4vh;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding-left: 4vh;
+    padding-right: 4vh;
+
+}
+/* ADAPTATION AUX PETITS ECRANS */
+@media only screen and (max-width: 410px) {
+    .formDiv {
+        min-width: 0;
+    }
+    button {
+        text-indent: -9000px;
+        text-transform: capitalize;
+    }
+}
+
+/* ADAPTATION AUX TRES PETITS ECRANS */
+@media only screen and (max-width: 410px) {
+    .formDiv {
+        width: 15vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+    }
+    h1{
+        display: none;
+    }
+}

@@ -1,0 +1,124 @@
+/* STYLES DES ELEMENTS DE BASE */
+html {
+    font-size: 10%;
+}
+:root {
+    font-size: 2vh;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+/* STYLES DES TITRES */
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-weight: bold;
+}
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+}
+/* MISE EN PLACE DE L'IMAGE DE FOND */
+#fond{
+    background-image: url("../Images/fond.jpg");
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* MISE EN PLACE DU CADRE INFERIEUR DE LA PAGE */
+.cadre {
+    background-image: url("../Images/bg.jpg");
+    color : white;
+    height: 150vh;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    background-color: #FFFFFF;
+    border-top: 2vh groove #00264d;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+/* MISE DE SES ELEMENTS */
+.cadreElem {
+    cursor: pointer;
+    border: 1.5vh ridge #d1d100;
+    border-bottom-style: none;
+    border-top-style: none;
+    background-color: #000e1d;
+    width: 75vh;
+    padding-left: 4vh !important;
+    padding-right: 4vh !important;
+    transition: 500ms ease;
+}
+.cadreElem:hover {
+    background-color: #00060c;
+    transition: 500ms ease;
+}
+.cadreElem svg{
+    transform:rotate(0deg);
+    transition: transform 500ms ease;
+}
+.cadreElem:hover svg{
+    transform:rotate(15deg);
+    color: #e6e600;
+}
+/* GESTION DE LA BORDURE DU CADRE DE NAVIGATION INFERIEUR */
+#PremCadreElem {
+    border: 1.5vh ridge #e6e600;
+    border-bottom-style: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#DernCadreElem {
+    border: 1.5vh ridge #e6e600;
+    border-top-style: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* GESTION DES ELEMENTS DU CADRE DE NAVIGATION */
+.cadreElem svg{
+    width: 25vh;
+}
+
+.cadreElem svg{
+    padding: 3vh;
+}
+
+.cadreElem .cadreTexte {
+    font-size: 1rem;
+    padding: 10vh;
+}
+
+/* REAJUSTEMENT DES ELEMENTS DE BASE */
+body {
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+}
+main {
+    padding-top: 8vh;
+}
+
+/* ADAPTATION DU CADRE INFERIEUR AUX PETITS ECRANS */
+@media only screen and (max-width: 410px) {
+    .cadreElem {
+        width: 30vh;
+        padding-bottom: 0!important;
+        padding-top: 0!important;
+    }
+    .cadreElem svg{
+        display: none;
+    }
+    .cadreElem .cadreTexte{
+        padding: 0;
+    }
+    .cadreElem p{
+        display: none;
+    }
+}

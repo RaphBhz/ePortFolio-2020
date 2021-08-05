@@ -1,0 +1,33 @@
+/* STYLES DE SECTIONS */
+
+    /* Contenu principal de la page */
+    .contenu {
+        background-image: url("../Images/bg2.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 12vh;
+    }
+    /* Différentes rubriques du contenu */
+    .divArticle {
+        background-color: #000d1a;
+        border-top: #d1d100 solid 0.75vh;
+        border-bottom: #d1d100 solid 0.75vh;
+        margin-bottom: 10vh;
+    }
+/* STYLES DE TEXTE */
+    /* Titres des rubriques */
+h2 {
+    color: #000d1a;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+    /* Paragraphes */
+p{
+    font-size: 1rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #FFFFFF;
+    text-align: justify;
+}

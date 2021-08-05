@@ -1,0 +1,54 @@
+/* STYLE PRINCIPAL DE LA PAGE */
+main {
+    background-image: url("../Images/bg2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2vh;
+    padding-bottom: 35vh;
+    padding-top: 10vh;
+    height: 100%;
+}
+/* STYLE DU TABLEAU */
+table {
+    background-color: #FFFFFF;
+    overflow:scroll;
+    display: block;
+}
+/* STYLES DES TITRES DU TABLEAU */
+thead th{
+    border-style: none !important;
+    background-color: #000d1a;
+    color: #d1d100;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3.5vh !important;
+}
+/* STYLES DU TEXTE */
+p {
+    color: #000d1a;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    text-align: left;
+    padding: 2rem;
+    padding-left: 4rem;
+    font-weight: bold;
+}
+/* ADAPTATION AUX PETITS ECRANS */
+@media only screen and (max-width: 680px) {
+    p {
+        font-size: 1rem;
+        padding: 0;
+    }
+}
+/* ADAPTATION AUX ECRANS LARGES */
+@media only screen and (min-width: 600px) {
+    p {
+        font-size: 1rem;
+        padding: 0;
+    }
+    table {
+        width: auto !important;
+
+    }
+}

@@ -1,0 +1,230 @@
+/* STYLES DES ELEMENTS PRINCIPAUX COMMUNS AUX PAGES */
+html {
+    scroll-behavior: smooth;
+    font-size: 10%;
+}
+:root {
+    font-size: 2vh;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+body {
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+}
+/* Style de la barre de scroll */
+body::-webkit-scrollbar {
+    width: 0.8vh;
+}
+body::-webkit-scrollbar-track {
+    background: #000d1a;
+}
+body::-webkit-scrollbar-thumb {
+    background: #e6e600;
+}
+
+footer {
+    height: 10vh;
+    background-color: #000d1a;
+    border-top: #e6e600 0.5vh solid;
+    position:relative;
+}
+
+.footerIcon {
+    padding-top: 2vh;
+}
+
+.footerIcon svg:hover{
+    cursor: pointer;
+}
+/* STYLES DE TEXTE */
+.navTexte2 {
+    visibility: hidden;
+     opacity: 0;     /*sous menu invisible sans hover */
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* STYLES POUR GRANDS ECRANS */
+@media only screen and (min-width: 850px) {
+    /* STYLES DES ANRES */
+    a {
+        color: #FFFFFF;
+    }
+    a:hover {
+        text-decoration: none;
+        color: #e6e600;
+    }
+/* STYLES DE LA BARRE DE NAVIGATION */
+    #navbar{
+        z-index:1;
+        position: fixed;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+        height: 8vh;
+        min-height: 8vh;
+        background-color: #000d1a;
+        transition: 400ms;
+        border-bottom: solid 0.25rem #e6e600;
+    }
+/* EXPANSION DE LA BARRE DE NAVIGATION */
+    #navbar:hover{
+        height: 12vh;
+    }
+/* DEUXIEME EXPANSION DE LA BARRE DE NAVIGATION */
+    .navObjet:hover #navbar {
+        height: 16vh;
+    }
+/* ANIMATION ET STYLE DE LA FLECHE */
+    #fleche {
+        margin-right: 7vh;
+    }
+    #fleche svg{
+        color: #e6e600;
+        transform: rotate(0deg);
+        transition: transform 500ms;
+    }
+    #navbar:hover #fleche svg{
+        transform: rotate(-180deg);
+    }
+/* STYLES DES PARTIES DE LA BARRE DE NAVIGATION */
+    .navObjet {
+        margin-right: 1vh;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        padding-left: 1vh;
+        min-width: 10vh;
+        color: white;
+        width: 8vh;
+        height: 8vh;
+        transition: 500ms;
+    }
+    .navObjet:hover {
+        background-color: #000d1a;
+        border-bottom: solid 0.25rem #e6e600;
+        border-right: solid 0.25rem #e6e600;
+        height: 20vh !important;
+        width: 16vh !important;
+        transition: 500ms;
+    }
+/* APPARITION DES SOUS MENUS */
+    .navObjet:hover .navTexte2 {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.25s linear;
+        transition-delay: 400ms;
+    }
+/* REDIMENSION DES IMAGES VECTORIELLES */
+    .navObjet svg{
+        min-width: 4vh;
+        min-height: 4vh;
+        width: 4vh;
+        height: 4vh;
+    }
+/* RECOLORATION DES IMAGES VECTORIELLES */
+    .navObjet:hover svg{
+        stroke: #e6e600;
+    }
+/* TEXTES DE LA BARRE DE NAVIGATION */
+    .navTexte {
+        font-family: 'Quicksand', sans-serif;
+        visibility: hidden;
+        margin-top:auto;
+        font-size: 0rem;
+        font-weight: bold;
+        text-align: left;
+        cursor: pointer;
+    }
+/* APPARITION DES TEXTES DE LA BARRE DE NAVIGATION */
+    #navbar:hover .navTexte {
+        visibility: visible;
+        font-size: 1rem;
+    }
+/* GESTION DES ICONES DE LA BARRE DE NAVIGATION */
+    #navIcone {
+        min-height: 8vh;
+    }
+}
+/* STYLES POUR PETITS ECRANS */
+@media only screen and (max-width: 850px) {
+    /* STYLES DES ANRES */
+    a{
+        color: #FFFFFF;
+    }
+    a:hover {
+        text-decoration: none;
+        color: #e6e600;
+    }
+/* STYLES DE LA BARRE DE NAVIGATION */
+    #navbar{
+        z-index:1;
+        position: fixed;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+        height: 8vh;
+        min-height: 8vh;
+        background-color: #000d1a;
+        transition: 600ms;
+        flex-direction: column !important;
+        border-bottom: solid #e6e600;
+    }
+    #navbar:hover{
+        height: 50vh;
+    }
+/* ANIMATION ET STYLE DE LA FLECHE */
+    #navbar:hover #fleche svg{
+        transform: rotate(-180deg);
+    }
+    #fleche svg{
+        color: #e6e600;
+        transform: rotate(0deg);
+        transition: transform 500ms;
+    }
+/* STYLES DES PARTIES DE LA BARRE DE NAVIGATION */
+    .navObjet {
+        visibility: hidden;
+        flex-direction: row !important;
+        margin-right: 1vh;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        padding-left: 1vh;
+        min-width: 10vh;
+        color: white;
+    }
+    .navObjet:hover {
+        color: #e6e600;
+        background-color: black;
+    }
+    .navObjet svg{
+        min-width: 4vh;
+        min-height: 4vh;
+        width: 4vh;
+        height: 4vh;
+    }
+    #navbar:hover .navObjet {
+        visibility: visible;
+    }
+    .navObjet:hover svg{
+        stroke: #e6e600;
+    }
+
+/* TEXTES DE LA BARRE DE NAVIGATION */
+    .navTexte {
+        font-family: 'Quicksand', sans-serif;
+        visibility: hidden;
+        margin-top:auto;
+        margin-left: 2vh;
+        font-size: 0rem;
+        font-weight: bold;
+        text-align: left;
+    }
+    #navbar:hover .navTexte {
+        visibility: visible;
+        font-size: 1rem;
+    }
+/* GESTION DES ICONES DE LA BARRE DE NAVIGATION */
+    #navIcone {
+        min-height: 8vh;
+    }
+}
